@@ -11,12 +11,17 @@ The `Fundamentals` folder contains basic to intermediate Python scripts and lear
 - **[Adventure Companions]**: Demonstrates OOP through a simulation of adventurers and their companions.
 - **[Games]**: Contains two games, "Fantasy Duel" and "Elemental Showdown," illustrating game development basics.
 - **[Modular Practice]**: Focuses on Python modules, namespaces, and the `__name__` variable.
+- **[Misc]**: Includes additional practice materials and examples to enhance understanding of Python concepts. 
+
 
 ### [Games]
 This folder houses interactive Python games, such as "Fantasy Duel" and "Elemental Showdown," showcasing how Python can be used for game development with OOP principles and engaging gameplay mechanics.
 
 ### [Modular Practice]
 Here, you will find projects that emphasize the use of modules, improving code readability and maintainability. It's a great resource for understanding how different parts of a Python program interact with each other through imports and modules.
+
+### [Misc]
+The `Misc` folder contains various additional scripts and exercises aimed at further exploring and practicing Python. It includes subfolders like `Linked List`, `Store and Products`, and `Zoo`, each focused on specific aspects or implementations in Python.
 
 ## Installation and Usage
 To use the scripts or run the projects:
