@@ -35,4 +35,4 @@ Ensure you have Python installed (version 3.6 or higher recommended). No externa
 - [Game Development with Python](https://example.com/game-dev-python)
 
 ## License Information
-**Fantasy Duel** is released under the MIT License. For more details, see the LICENSE file in the repository.
+**Fantasy Duel** is released under the MIT License.

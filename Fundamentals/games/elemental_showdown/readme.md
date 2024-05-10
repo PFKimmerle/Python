@@ -37,4 +37,4 @@ To play **Elemental Showdown**, follow these steps:
 4. Enjoy battling between heroes and villains using elemental powers.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License.

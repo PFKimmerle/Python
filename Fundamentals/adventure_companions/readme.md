@@ -53,5 +53,5 @@ No additional installation steps are required apart from setting up Python and c
 
 ## License Information
 
-Adventure Companions is open-sourced under the MIT License. The full license text can be found in the LICENSE file in the repository.
+Adventure Companions is open-sourced under the MIT License. 
 

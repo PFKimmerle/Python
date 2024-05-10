@@ -49,4 +49,4 @@ To complement the scripts and exercises in the Fundamentals folder, here are som
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file in the root directory for details.
+This project is licensed under the MIT License.
