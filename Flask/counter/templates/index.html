@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <div id="counter">
+            You have visited this page {{ visit_count }} times.
+            <br>
+            Counter value: {{ counter_value }}
+        </div>
+        <div>
+            <form action="/increment_by_two" method="post">
+                <button id="increment" type="submit">Click</button>
+            </form>
+            <form action="/destroy_session" method="post">
+                <button id="reset" type="submit">Reset</button>
+            </form>
+        </div>
+        <form action="/custom_increment" method="post">
+            <label for="increment">Increment by:</label>
+            <input type="number" id="increment" name="increment">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
