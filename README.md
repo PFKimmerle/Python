@@ -65,7 +65,7 @@ The `Substack` folder contains a collection of Python projects shared through yo
 
 To use the scripts or run the projects:
 
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine: 'https://github.com/PFKimmerle/Python.git'
 2. Navigate to the desired project directory.
 3. Follow the specific instructions in the README of that directory to run the scripts or projects.
 
