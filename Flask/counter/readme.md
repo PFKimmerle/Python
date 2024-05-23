@@ -56,7 +56,7 @@ The Counter Flask Application is a simple web application designed to track the 
 
 ## Getting Started
 To use Counter Flask Application, follow these steps:
-1. Clone the repository from GitHub to your local machine: git clone 'https://github.com/PFKimmerle/Python/tree/main'
+1. Clone the repository from GitHub to your local machine: git clone 'https://github.com/PFKimmerle/Python.git'
 2. Navigate to the project directory.
 3. Install dependencies: 'pip install -r requirements.txt'
 4. Run the Flask application: 'python app.py'
