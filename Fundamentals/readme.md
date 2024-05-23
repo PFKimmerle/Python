@@ -30,7 +30,7 @@ This folder within the larger Python project is dedicated to fundamental program
 ## How to Use
 
 To use the scripts:
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine: 'https://github.com/PFKimmerle/Python.git'
 2. Navigate to the `fundamentals` directory.
 3. Run any script by typing `python <script_name>.py` in your terminal (replace `<script_name>` with the actual script filename).
 
