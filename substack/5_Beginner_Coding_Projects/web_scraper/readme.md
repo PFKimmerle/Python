@@ -1,11 +1,11 @@
-# BBC News Web Scraper
+# Web Scraper
 
-This project is a Python-based web scraper designed to extract headlines and article details from the BBC News website using Selenium and BeautifulSoup. The extracted data is saved into a CSV file for easy handling and analysis.
+This project is a Python-based web scraper designed to extract headlines and article details from the a news website using Selenium and BeautifulSoup. The extracted data is saved into a CSV file for easy handling and analysis.
 
 
 ## Introduction
 
-The BBC News Web Scraper automates the process of navigating to the BBC News website, extracting article details such as titles, URLs, descriptions, image URLs, and topics, and saving them into a CSV file. This tool is useful for data analysis, media monitoring, and research purposes.
+The Web Scraper automates the process of navigating to the British Broadcasting Corporation (BBC) News website, extracting article details such as titles, URLs, descriptions, image URLs, and topics, and saving them into a CSV file. This tool is useful for data analysis, media monitoring, and research purposes.
 
 ## Features
 
@@ -24,7 +24,7 @@ The BBC News Web Scraper automates the process of navigating to the BBC News web
   - `lxml`
 
 ## Installation
-Follow these steps to set up and run the BBC News Web Scraper:
+Follow these steps to set up and run the Web Scraper:
 1. Clone the Repository: 'https://github.com/PFKimmerle/Python.git'
 2. Set up a Virtual Environment: 'python -m venv venv'
 3. Activate the Virtual Environment
