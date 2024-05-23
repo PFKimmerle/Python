@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div class="message" style="color: {{ color }}">
+            <div class="inner">
+                <h1>{{ message }}</h1>
+            </div>
+        </div>
+        {% if game_over %}
+        <div class="result-details">
+            <p>{{ random_number }} is the number!</p>
+            <p>It took you {{ attempts }} attempts.</p>
+        </div>
+        <form action="/add_to_leaderboard" method="POST">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+            <input type="hidden" name="attempts" value="{{ attempts }}">
+            <input type="submit" value="Submit">
+        </form>
+        {% else %}
+        <form action="/guess" method="POST">
+            <input type="number" name="guess" required>
+            <input type="submit" value="Submit Guess">
+        </form>
+        {% endif %}
+        <form action="/reset" method="POST">
+            <button type="submit">Try again</button>
+        </form>
+        <div class="guesses">
+            <h2>Your Guesses:</h2>
+            <p>{{ guesses | join(', ') }}</p>
+        </div>
+        <a href="{{ url_for('leaderboard') }}">View Leaderboard</a>
+    </div>
+</body>
+</html>
