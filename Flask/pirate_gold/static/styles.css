@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gold-display {
+    margin-bottom: 20px;
+}
+
+.gold-amount {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ff6347;
+}
+
+.rules {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #555;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.action {
+    margin: 10px 0;
+}
+
+.actions input[type="submit"] {
+    width: 250px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.actions .island {
+    background: #28a745;
+}
+
+.actions .island:hover {
+    background: #218838;
+}
+
+.actions .cave {
+    background: #17a2b8;
+}
+
+.actions .cave:hover {
+    background: #138496;
+}
+
+.actions .hut {
+    background: #ffc107;
+    color: black;
+}
+
+.actions .hut:hover {
+    background: #e0a800;
+}
+
+.actions .casino {
+    background: #dc3545;
+}
+
+.actions .casino:hover {
+    background: #c82333;
+}
+
+.activities {
+    margin-top: 20px;
+}
+
+.activities-log {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.activities ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activities li {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.activities li:nth-child(odd) {
+    background-color: #e9ecef;
+}
+
+.reset-form {
+    margin-top: 20px;
+}
+
+.reset-form input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.reset-form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.game-over {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #dc3545;
+    border-radius: 8px;
+    background-color: #fff3f3;
+    color: #dc3545;
+    font-weight: bold;
+}
