@@ -1,6 +1,6 @@
 # Python Project Repository
 
-Welcome to the Python Project Repository! This repository is designed to showcase a variety of Python projects ranging from simple fundamental programming exercises to more complex games and modular coding practices. Each subfolder contains distinct projects or sets of Python scripts aimed at different aspects of learning and applying Python programming.
+This repository is designed to showcase a variety of Python projects ranging from simple fundamental programming exercises to more complex games and modular coding practices. Each subfolder contains distinct projects or sets of Python scripts aimed at different aspects of learning and applying Python programming.
 
 ## Repository Structure
 

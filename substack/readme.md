@@ -1,5 +1,5 @@
 # Substack Python Projects
-Welcome to the Substack Python Projects repository! This repository contains a collection of beginner-level Python projects, each demonstrating fundamental concepts and basic functionalities. These projects are designed to provide simple yet practical examples of Python programming. For a detailed discussion of these projects, check out my article: ["5 Beginner Coding Projects to Boost Your Skills"](https://pfkimmerle.substack.com/p/5-beginner-coding-projects-to-boost). 
+This repository contains a collection of beginner-level Python projects, each demonstrating fundamental concepts and basic functionalities. These projects are designed to provide simple yet practical examples of Python programming. For a detailed discussion of these projects, check out my article: ["5 Beginner Coding Projects to Boost Your Skills"](https://pfkimmerle.substack.com/p/5-beginner-coding-projects-to-boost). 
 
 
 ## Repository Structure
