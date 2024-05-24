@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pirate Gold</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Pirate Gold Game</h1>
+        <div class="gold-display">
+            <p>Your Gold: <span class="gold-amount">{{ gold }}</span></p>
+        </div>
+        <div class="rules">
+            <p>Try to collect as much gold as possible by exploring different locations. The game ends when you reach 500 gold or after 15 moves. Good luck!</p>
+        </div>
+        {% if not game_over %}
+        <div class="actions">
+            <div class="action">
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="place" value="island">
+                    <input type="submit" value="Find Gold on the Island!" class="island">
+                </form>
+            </div>
+            <div class="action">
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="place" value="cave">
+                    <input type="submit" value="Find Gold in the Cave!" class="cave">
+                </form>
+            </div>
+            <div class="action">
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="place" value="hut">
+                    <input type="submit" value="Find Gold in the Hut!" class="hut">
+                </form>
+            </div>
+            <div class="action">
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="place" value="casino">
+                    <input type="submit" value="Try Your Luck at the Casino!" class="casino">
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <div class="game-over">
+            <p>Game Over! You have either reached 500 gold or completed 15 moves.</p>
+            <form action="/reset" method="get" class="reset-form">
+                <input type="submit" value="Restart Game">
+            </form>
+        </div>
+        {% endif %}
+        <div class="activities">
+            <h2>Activities:</h2>
+            <div class="activities-log">
+                <ul>
+                    {% for activity in activities %}
+                        <li style="color: {{ activity.color }}">{{ activity.text|safe }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
