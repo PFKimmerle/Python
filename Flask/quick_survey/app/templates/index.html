@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+                <h1 class="card-title text-center">Quick Survey</h1>
+                <form action="/process" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location:</label>
+                        <select name="location" id="location" class="form-control" required>
+                            <option value="San Jose">San Jose</option>
+                            <option value="Seattle">Seattle</option>
+                            <option value="Los Angeles">Los Angeles</option>
+                            <option value="New York">New York</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="language">Favorite Language:</label>
+                        <select name="language" id="language" class="form-control" required>
+                            <option value="Python">Python</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Java">Java</option>
+                            <option value="C++">C++</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment (optional):</label>
+                        <textarea name="comment" id="comment" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="framework">Favorite Framework:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" name="framework" value="Flask" class="form-check-input" id="flask">
+                            <label class="form-check-label" for="flask">Flask</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" name="framework" value="Django" class="form-check-input" id="django">
+                            <label class="form-check-label" for="django">Django</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" name="framework" value="React" class="form-check-input" id="react">
+                            <label class="form-check-label" for="react">React</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Experience Level:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="experience" value="Beginner" class="form-check-input" id="beginner">
+                            <label class="form-check-label" for="beginner">Beginner</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="experience" value="Intermediate" class="form-check-input" id="intermediate">
+                            <label class="form-check-label" for="intermediate">Intermediate</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="experience" value="Advanced" class="form-check-input" id="advanced">
+                            <label class="form-check-label" for="advanced">Advanced</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
