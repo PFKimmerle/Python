@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+                <h1 class="card-title text-center">Submitted Info</h1>
+                <p><strong>Name:</strong> {{ session['name'] }}</p>
+                <p><strong>Location:</strong> {{ session['location'] }}</p>
+                <p><strong>Favorite Language:</strong> {{ session['language'] }}</p>
+                <p><strong>Comment:</strong> {{ session['comment'] }}</p>
+                <p><strong>Favorite Framework:</strong> {{ ', '.join(session['framework']) }}</p>
+                <p><strong>Experience Level:</strong> {{ session['experience'] }}</p>
+                <form action="/">
+                    <button type="submit" class="btn btn-secondary btn-block">Go Back</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
