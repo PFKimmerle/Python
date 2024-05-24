@@ -22,7 +22,7 @@ For detailed information, please refer to the [Fantasy Duel README](fantasy_duel
 To explore and play these games, follow these steps:
 
 1. **Clone the Repository**
-   git clone https://github.com/PFKimmerle/Python/tree/main/Fundamentals/games
+   git clone 'https://github.com/PFKimmerle/Python.git'
 
 2. **Navigate to the Desired Game Directory**
    cd games/elemental_showdown  # For Elemental Showdown
