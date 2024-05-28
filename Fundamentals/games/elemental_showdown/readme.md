@@ -1,6 +1,6 @@
 # Elemental Showdown
 
-Elemental Showdown is a text-based card game where players choose to be either a Hero or a Villain, using elemental cards to battle against an AI opponent. The goal is to reduce the opponent's health to zero using strategic card plays that leverage elemental strengths and weaknesses.
+Elemental Showdown is a text-based card game where players choose to be either a Hero or a Villain, using elemental cards to battle against a computer-controlled opponent . The goal is to reduce the opponent's health to zero using strategic card plays that leverage elemental strengths and weaknesses.
 
 ## Versions
 
