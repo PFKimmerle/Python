@@ -8,7 +8,7 @@ Welcome to the Python Games Collection repository! This repository houses multip
 ## Projects Overview
 
 ### Elemental Showdown
-"Elemental Showdown" is a strategic turn-based game where players choose to be either a Hero or a Villain. Players use elemental cards to attack their opponents and aim to reduce their health to zero. The game features a text-based interface and an AI opponent that dynamically responds to the player's actions.
+"Elemental Showdown" is a strategic turn-based game where players choose to be either a Hero or a Villain. Players use elemental cards to attack their opponents and aim to reduce their health to zero. The game features a text-based interface and a computer-controlled opponent that dynamically responds to the player's actions.
 
 For detailed information, please refer to the [Elemental Showdown README](elemental_showdown/readme.md).
 
