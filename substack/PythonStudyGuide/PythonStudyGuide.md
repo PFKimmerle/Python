@@ -320,13 +320,25 @@
 - **Definition:** Not allowed in tuples.
 - **Example:**
     Not allowed in tuples.
+    ```python
+    coordinates = (10, 20)
+    coordinates[0] = 15  # This will raise a TypeError
+    ```
 
 ### Tuples - Add Value
 - **Definition:** Not allowed in tuples.
 - **Example:**
     Not allowed in tuples.
+    ```python
+    coordinates = (10, 20)
+    coordinates.append(30)  # This will raise an AttributeError
+    ```
 
 ### Tuples - Delete Value
 - **Definition:** Not allowed in tuples.
 - **Example:**
     Not allowed in tuples.
+    ```python
+    coordinates = (10, 20)
+    del coordinates[0]  # This will raise a TypeError
+    ```
