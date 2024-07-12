@@ -1,7 +1,7 @@
 # Python Error Identification Worksheet
 
 ### Instructions
-Welcome to the Python Error Identification Worksheet! In this exercise, you will be presented with several code snippets, each containing one or more errors. Your task is to identify the errors, correct them, and understand why the errors occurred.
+Identify the errors and correct them.
 
 ### Questions
 #### 1.
