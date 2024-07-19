@@ -4,25 +4,30 @@ This repository contains a collection of Flask projects demonstrating various we
 
 ## Projects
 
-### 1. Guess the Number Game
-**Directory**: `Guess_the_Number_Game`
+- **Checkerboard**
+  - **Directory**: Checkerboard
+  - A simple web application that renders a customizable checkerboard.
 
-A simple web-based game where players try to guess a randomly generated number within a certain range.
+- **Counter**
+  - **Directory**: counter
+  - A web application that keeps track of a counter value which can be incremented or decremented.
 
-### 2. Counter
-**Directory**: `counter`
+- **Guess the Number Game**
+  - **Directory**: Guess_the_Number_Game
+  - A simple web-based game where players try to guess a randomly generated number within a certain range.
 
-A web application that keeps track of a counter value which can be incremented or decremented.
+- **HTML Table**
+  - **Directory**: HTML_Table
+  - Demonstrates the creation and rendering of an HTML table using Flask, displaying an employee directory with details such as first name, last name, and job title.
 
-### 3. Pirate Gold
-**Directory**: `pirate_gold`
+- **Pirate Gold**
+  - **Directory**: pirate_gold
+  - An interactive treasure hunt game where players search for hidden gold.
 
-An interactive treasure hunt game where players search for hidden gold.
+- **Quick Survey**
+  - **Directory**: quick_survey
+  - A simple Flask application that collects survey data through a form and displays the results.
 
-### 4. Quick Survey
-**Directory**: `quick_survey`
-
-A simple Flask application that collects survey data through a form and displays the results.
 
 ---
 
