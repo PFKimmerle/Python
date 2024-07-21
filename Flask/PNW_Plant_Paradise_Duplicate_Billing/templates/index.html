@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNW Plant Paradise</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f4;
+        }
+        header {
+            background-color: #2d572c;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #f8f8f4;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            color: #fff;
+        }
+        .navbar strong {
+            color: #f8f8f4;
+        }
+        .jumbotron {
+            background: #6b5b95;
+            padding: 30px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: white;
+        }
+        .btn-primary {
+            background-color: #5fa345;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background-color: #4e8a3a;
+            color: white;
+        }
+        .plant-image {
+            width: 150px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .plant-container {
+            text-align: center;
+            margin: 10px;
+        }
+        .plant-title {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .welcome-message {
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: white; font-size: 2em;">PNW Plant Paradise</h1>
+        <nav class="navbar">
+            <a href="/" class="mr-4">Home</a>
+            <a href="/plants" class="ml-4">Plants</a>
+        </nav>
+    </header>
+    <main class="container mx-auto mt-10">
+        <section class="jumbotron">
+            <div class="welcome-message">
+                <h2 class="text-4xl font-bold mb-4">Welcome to the PNW Plant Paradise!</h2>
+                <p>Explore a wide variety of fresh plants available for everyone. Enhance your space with the beauty of nature.</p>
+                <a href="/plants" class="bg-gray-500 text-white px-4 py-2 rounded">See Plants</a>
+            </div>
+        </section>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <form action='/checkout' method='post'>
+                    <h4 class="mb-3" id='buy'>What would you like to buy?</h4>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Plant Name</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fern</td>
+                                <td>
+                                    <select name='fern'>
+                                        <option value='0'>0</option>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cactus</td>
+                                <td>
+                                    <select name='cactus'>
+                                        <option value='0'>0</option>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bonsai</td>
+                                <td>
+                                    <select name='bonsai'>
+                                        <option value='0'>0</option>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Succulent</td>
+                                <td>
+                                    <select name='succulent'>
+                                        <option value='0'>0</option>
+                                        <option value='1'>1</option>
+                                        <option value='2'>2</option>
+                                        <option value='3'>3</option>
+                                        <option value='4'>4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 class="mb-3" id='info'>Your Information</h4>
+                    <div class="form-section">
+                        <label for="firstName">First name</label>
+                        <input type="text" class="form-control" name="first_name" placeholder="" value="">
+                    </div>
+                    <div class="form-section">
+                        <label for="lastName">Last name</label>
+                        <input type="text" class="form-control" name="last_name" placeholder="" value="">
+                    </div>
+                    <div class="form-section">
+                        <label for="student_id">Your Student ID <span class="text-muted">(Optional)</span></label>
+                        <input type="text" class="form-control" name="student_id" placeholder="123-456-7890">
+                    </div>
+
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Checkout</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
