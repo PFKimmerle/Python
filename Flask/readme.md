@@ -24,6 +24,10 @@ This repository contains a collection of Flask projects demonstrating various we
   - **Directory**: pirate_gold
   - An interactive treasure hunt game where players search for hidden gold.
 
+- **PNW_Plant_Paradise**
+  - **Directory**: PNW_Plant_Paradise
+  - A web application for browsing and ordering plants, showcasing form handling, order processing, and demonstrating issues with rendering on POST requests.
+
 - **Quick Survey**
   - **Directory**: quick_survey
   - A simple Flask application that collects survey data through a form and displays the results.
