@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PNW Plant Paradise</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tailwind.min.css') }}">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+            background-color: #f8f8f4;
+            padding: 20px;
+        }
+        header {
+            background-color: #2d572c;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #f8f8f4;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .plant-image {
+            width: 75px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .plant-container {
+            text-align: center;
+            margin: 10px;
+        }
+        .plant-title {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: white; font-size: 2em;">PNW Plant Paradise</h1>
+        <nav class="navbar">
+            <a href="/" class="mr-4">Home</a>
+            <a href="/plants" class="ml-4">Plants</a>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Thank you for your order!</h1>
+                <p class="lead text-muted">We ordered {{ fern + cactus + bonsai + succulent }} items for you and charged your account.</p>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h4 class="mb-3">You have ordered</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Plant Image</th>
+                            <th>Plant Name</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if fern > 0 %}
+                        <tr>
+                            <td><img src="{{ url_for('static', filename='images/fern.png') }}" alt="Fern" class="plant-image"></td>
+                            <td>Fern</td>
+                            <td>{{ fern }}</td>
+                        </tr>
+                        {% endif %}
+                        {% if cactus > 0 %}
+                        <tr>
+                            <td><img src="{{ url_for('static', filename='images/cactus.png') }}" alt="Cactus" class="plant-image"></td>
+                            <td>Cactus</td>
+                            <td>{{ cactus }}</td>
+                        </tr>
+                        {% endif %}
+                        {% if bonsai > 0 %}
+                        <tr>
+                            <td><img src="{{ url_for('static', filename='images/bonsai.png') }}" alt="Bonsai" class="plant-image"></td>
+                            <td>Bonsai</td>
+                            <td>{{ bonsai }}</td>
+                        </tr>
+                        {% endif %}
+                        {% if succulent > 0 %}
+                        <tr>
+                            <td><img src="{{ url_for('static', filename='images/succulent.png') }}" alt="Succulent" class="plant-image"></td>
+                            <td>Succulent</td>
+                            <td>{{ succulent }}</td>
+                        </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+
+                <h4 class="mb-3">Your Information</h4>
+                <div class="row">
+                    <div class="col-md-6 mb-3">First Name: {{ first_name }}</div>
+                    <div class="col-md-6 mb-3">Last Name: {{ last_name }}</div>
+                </div>
+
+                <div class="mb-3">Your Student ID: {{ student_id }}</div>
+
+                <hr class="mb-4">
+                <a class="btn btn-primary btn-lg btn-block" href="/">Go Back</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
