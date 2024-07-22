@@ -11,6 +11,11 @@ A simple Python script to fetch the current weather for a given city or zip code
 - `requests` library
 - `BeautifulSoup` library (though not strictly necessary with the current implementation)
 
+## Note
+
+If you encounter an error while using the weather service, please check the [wttr.in website](https://wttr.in) directly. The site may be down or experiencing issues, which could lead to errors that are not related to your code.
+
+
 ## Installation
 1. Clone the repository: 'https://github.com/PFKimmerle/Python.git'
 2. Install the required Python libraries: 'pip install requests beautifulsoup4'
