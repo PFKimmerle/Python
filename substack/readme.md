@@ -1,5 +1,5 @@
-# Substack Python Projects
-This repository contains a collection of beginner-level Python projects, each demonstrating fundamental concepts and basic functionalities. These projects are designed to provide simple yet practical examples of Python programming. For a detailed discussion of these projects, check out my article: ["5 Beginner Coding Projects to Boost Your Skills"](https://pfkimmerle.substack.com/p/5-beginner-coding-projects-to-boost). 
+# Substack
+This repository contains a collection of Python projects featured in articles on my Substack website, [PFKimmerle Substack](https://pfkimmerle.substack.com/). 
 
 
 ## Repository Structure
@@ -8,38 +8,28 @@ This folder contains individual Python projects demonstrating specific functiona
 ### Projects
 
 1. **Weather App**
-   - Fetches weather information for a specified city or zip code.
-   - Displays the weather data in a simple text format.
-   - Handles HTTP errors and other exceptions gracefully.
+   - Fetches weather information for a specified city or zip code. Displays the weather data in a simple text format and handles HTTP errors and other exceptions gracefully.
 
 2. **Web Scraper**
-   - Sets up a Selenium WebDriver for browsing.
-   - Extracts and parses data from the BBC News website using BeautifulSoup.
-   - Finds and processes JSON data embedded in the webpage.
-   - Parses article information (title, URL, description, image URL, topics) from the JSON data.
-   - Saves the extracted articles to a CSV file.
-   - Handles errors and ensures the WebDriver is properly closed after execution.
+   - Sets up a Selenium WebDriver for browsing and extracts data from the BBC News website using BeautifulSoup. Saves the extracted articles to a CSV file and handles errors effectively.
 
 3. **Calculator**
-   - Performs basic arithmetic operations: addition, subtraction, multiplication, and division.
-   - Allows the user to input the desired operation and two numbers.
-   - Continuously prompts the user for operations until they choose to quit.
-   - Validates user input and handles invalid operations or non-numeric input gracefully.
-   - Provides feedback for division by zero errors.
+   - Performs basic arithmetic operations: addition, subtraction, multiplication, and division. Continuously prompts the user for operations and handles invalid input gracefully.
 
 4. **Number Guess**
-   - Randomly selects a number between 1 and 100 for the user to guess.
-   - Continuously prompts the user to guess the number, providing feedback whether the guess is too high or too low.
-   - Tracks the number of attempts taken by the user to guess the correct number.
-   - Handles invalid input by prompting the user to enter a valid integer.
+   - Randomly selects a number between 1 and 100 for the user to guess. Provides feedback on guesses and tracks the number of attempts taken by the user.
 
 5. **To-Do List**
-   - Allows users to add new tasks to their to-do list.
-   - Displays the current list of tasks with numbered indexing.
-   - Provides functionality to remove tasks by specifying the task number.
-   - Continuously prompts the user to add, remove, view tasks, or quit the application.
-   - Handles invalid input and ensures tasks cannot be empty or invalid task numbers are managed gracefully.
+   - Allows users to add, remove, and view tasks in their to-do list. Ensures tasks are managed gracefully and handles invalid input.
 
+6. **Flask_Book_Api**
+   - A RESTful API built using Flask and SQLAlchemy for managing a database of specific entities. Includes functionalities for creating, reading, updating, and deleting records.
+
+7. **Temperature_Converter**
+   - Converts temperatures between Celsius, Fahrenheit, and Kelvin. Demonstrates basic input/output operations and error handling.
+
+8. **PythonStudyGuide**
+   - Contains resources to help recognize, write, and debug Python code. Referenced in the article "Recognizing Python: Writing and Debugging Code".
 
 ## Installation and Usage
 To use the scripts or run the projects: 
