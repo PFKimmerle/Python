@@ -22,8 +22,7 @@ Flask-based web applications demonstrating Python's use in web development. Proj
 - **Guess_the_Number_Game**: A beginner-level game where players guess a randomly selected number.
 - **Counter**: A web application tracking the number of site visits.
 
-### Substack
-This folder contains Python projects featured in articles on my Substack website [PFKimmerle Substack](https://pfkimmerle.substack.com/). These projects are aimed at beginners and cover fundamental concepts and basic functionalities.
+
 
 ## Installation and Usage
 1. Clone this repository: `git clone https://github.com/PFKimmerle/Python.git`
