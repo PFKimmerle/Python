@@ -1,6 +1,6 @@
 # API Testing with Postman
 
-This folder is dedicated to showcasing practical examples of using Postman for API testing within Python projects. Each project within this repository is tailored to demonstrate specific testing techniques and scenarios using Postman.
+This folder showcases practical examples of using Postman for API testing within Python projects. Each project within this repository is tailored to demonstrate specific testing techniques and scenarios using Postman.
 
 ## Projects
 
