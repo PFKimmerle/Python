@@ -10,11 +10,6 @@ Check out my articles on my Substack website,[Pixels to Code](https://pfkimmerle
 - Search functionality for books by title or author
 - SQLite database for data persistence
 
-# File Structure
-- app.py: Main application file containing the Flask app and API routes
-- static/styles.css: CSS file for styling the web interface
-- instance/books.db: SQLite database file (created automatically)
-
 ## Installation and Usage
 To run on your local machine, follow these steps:
 
